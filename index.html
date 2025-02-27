@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <title>Quiz de Jujutsu Kaisen</title>
+    <meta name="description" content="Um quiz para testar seus conhecimentos">
+
+    <style>
+        /* Definindo cores */
+        :root {
+            --fundo-principal: #e0e0e0;
+            --fundo-secao: #343434;
+            --fundo-cabecalho: #1d3c6a;
+            --fundo-rodape: #000000;
+            --cor-texto: #ffffff;
+            --cor-titulo: #f50000;
+            --cor-link: #a6c9f2;
+            --cor-botoes: #9e2a2f;
+            --cor-destaque: #f4b400;
+        }
+
+        /* Estilos do Corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--fundo-principal);
+            color: var(--cor-texto);
+            margin: 0;
+        }
+
+        header {
+            background-color: var(--fundo-cabecalho);
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: var(--cor-texto);
+            font-size: 2em;
+        }
+
+        header p {
+            color: var(--cor-destaque);
+        }
+
+        main {
+            padding: 20px;
+            background-color: var(--fundo-principal);
+        }
+
+        section {
+            background-color: var(--fundo-secao);
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: var(--cor-titulo);
+        }
+
+        section p, section label {
+            color: var(--cor-texto);
+        }
+
+        form input[type="radio"], form input[type="checkbox"], form input[type="text"], form input[type="password"], form input[type="date"], form select {
+            background-color: var(--fundo-principal);
+            border: 1px solid var(--cor-titulo);
+            padding: 5px;
+            margin: 5px;
+            color: var(--cor-texto);
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: var(--cor-botoes);
+            color: var(--cor-texto);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: var(--fundo-rodape);
+            text-align: center;
+            padding: 10px;
+            color: var(--cor-texto);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid var(--cor-titulo);
+        }
+
+        table th {
+            background-color: var(--fundo-secao);
+            color: var(--cor-texto);
+        }
+
+        table tr:nth-child(even) {
+            background-color: var(--fundo-principal);
+        }
+
+        table tr:nth-child(odd) {
+            background-color: var(--fundo-secao);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Quiz de Jujutsu Kaisen</h1>
+        <p>Teste seu conhecimentos em Jujutsu Kaisen!</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <H2>Sobre esse Quiz</H2>
+            <p>O Quiz de Jujutsu Kaisen é um site interativo dedicado aos fãs do popular anime e mangá. Ele oferece uma série de perguntas desafiadoras sobre personagens, enredo, habilidades e momentos icônicos da série.</p>
+            <p>Com questões que vão desde os detalhes mais óbvios até os mais profundos, o quiz permite que os participantes testem seu conhecimento sobre o universo de Jujutsu Kaisen.Ao final, você recebe uma pontuação, além de ter a chance de compartilhar seus resultados com amigos e outros fãs</p>
+            <p>É uma maneira divertida e envolvente de mostrar o quanto você conhece o mundo de Jujutsu e seus</p>
+        </section>
+
+        <!--Primeira pergunta mutipla escolha-->
+        <section>
+            <h2>Qual é o nome da técnica amaldiçoada de Gojo Satoru que manipula o espaço?</h2>
+            <Form>
+                <input type="radio" value="Expansão da Técnica de Domínio" id="p1a" name="pergunta1">
+                <label for="p1a">Expansão da Técnica de Domínio</label> <br>
+
+                <input type="radio" value="Limite Infinito" id="p1b" name="pergunta1">
+                <label for="p1b">Limite Infinito</label> <br>
+
+                <input type="radio" value="Jogo da Ilusão" id="p1c" name="pergunta1">
+                <label for="p1c">Jogo da Ilusão</label> <br>
+
+                <input type="radio" value="santuário Malevolente" id="p1d" name="pergunta1">
+                <label for="p1d">santuário Malevolente</label> <br>
+
+            </Form>
+        </section>
+
+        <!--Segunda pergunta texto-->
+        <section>
+            <h2>Quem é o "Rei das Maldições"?</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta">
+            </form>
+        </section>
+
+        <!--terceira pergunta senha-->
+        <section>
+            <h2>Qual é a palavra-chave usada por Toge Inumaki para ativar suas técnicas amaldiçoadas?</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua resposta">
+            </form>
+        </section>
+
+        <!--Quarta pergunta data-->
+        <section>
+            <h2>Qual foi o ano que lançou o anime de Jujutsu?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+
+        <!--Quinta pergunta seleção multipla-->
+        <section>
+            <h2>Qual é o nome dos alunos que seguem o mentor Satoru Gojo na Tokyo Jujutsu High?</h2>
+            <Form>
+                <input type="checkbox" id="pa5" name="pergunta5" value="Yuji Itadori">
+                <label for="pa5">Yuji Itadori</label> <br>
+
+                <input type="checkbox" id="pb5" name="pergunta5" value="Megumi Fushiguro">
+                <label for="pb5">Megumi Fushiguro</label> <br>
+
+                
+                <input type="checkbox" id="pc5" name="pergunta5" value="Kento Nanami">
+                <label for="pc5">Kento Nanami</label> <br>
+
+                
+                <input type="checkbox" id="pd5" name="pergunta5" value="Ryomen Sukuna">
+                <label for="pd5">Ryomen Sukuna</label> <br>
+
+                
+                <input type="checkbox" id="pe5" name="pergunta5" value="Yuta Okkotsu">
+                <label for="pe5">Yuta Okkotsu</label> <br>
+            </Form>
+        </section>
+
+        <!--sexta questão-->
+        <section>
+            <h2> Qual é o nome da escola onde Yuji Itadori estuda para se tornar um feiticeiro jujutsu?</h2>
+            <form>
+                <input type="radio" id="pa6" name="pergunta6" value="Kyoto Jujutsu High">
+                <label for="pa6">Kyoto Jujutsu High</label> <br>
+
+                <input type="radio" id="pb6" name="pergunta6" value="jujutsu Sorcery School">
+                <label for="pb6">jujutsu Sorcery School</label><br>
+
+                <input type="radio" id="pc6" name="pergunta6" value="Tokyo Jujutsu High">
+                <label for="pc6">Tokyo Jujutsu High</label> <br>
+
+                <input type="radio" id="pd6" name="pergunta6" value="shibuya Academy">
+                <label for="pd6">shibuya Academy</label> <br>
+
+            </form>
+        </section>
+
+        <!--Setima questão menu suspenso-->
+        <section>
+            <h2>Quem é esse personagem?</h2>
+            <img src="geto.webp" alt="Uma imagem do Geto ">
+            
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="Ryomen Sukuna">Ryomen Sukuna</option>
+                    <option value="Satoru Gojo">Satoru Gojo</option>
+                    <option value=" Toge Inumaki"> Toge Inumaki</option>
+                    <option value=" Megumi Fushiguro"> Megumi Fushiguro</option>
+                    <option value=" Geto">Geto</option>
+                </select>
+            </form>
+        </section>
+
+        <!--Oitava questão imagem-->
+        <section>
+            <h2>Quem usa essa Expansão de Domínio?</h2>
+            <figure>
+                <img src="expansão.webp" alt="Uma expansão de Domíniousada por algum personagem" height="50%" width="50%"> 
+                <figcaption>Expansão de Domínio usada por um personagem de Jujutsu</figcaption>
+            </figure>
+        
+            <form>
+                <input type="text" name="pergunta8" id="p8" placeholder="Digite sua resposta">
+            </form>
+        </section>
+        <section>
+            <h2>Tabela de pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista, Você pode conseguir um melhor resultado da próxima vez.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Você ainda precisa melhorar.</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Seu conhecimento sobre Jujutsu Kaisen está bom.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito! seu conhecimento está excelente.</td>
+                    </tr>
+                 </tbody>
+                 <tfoot>
+                    <tr>
+                    <td colspan="2">Obrigado por participar!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Listas de resposta-->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para verificar suas resposta</summary>
+                <ol>
+                    <li>Limite Infinito</li>
+                    <li>Ryomen Sukuna</li>
+                    <li>Salmon</li>
+                    <li>3 de outubro de 2020</li>
+                    <li> 1.Yuji Itadori 2. Megumi Fushiguro 3. Yuta Okkotsu</li>
+                    <li>Tokyo Jujutsu High</li>
+                    <li>Geto</li>
+                    <li>Sukuna</li>
+            
+                </ol>
+            </details>
+        </section>
+        
+
+        <section>
+            <h2>Nos dê seu feedbak</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentarios">comentários:</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="5" cols="50" placeholder="Digite seu feedbak aqui"></textarea><br>
+                    <button onclick="alert('feedbak enviado')">Envie seu feedbak</button>
+                 </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&COPY;Quiz sobre seus conhecimentos de Jujutsu Kaisen</p>
+    </footer>
+
+</body>
+</html>

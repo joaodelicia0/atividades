@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding-inline-end: 0;
+    box-sizing: content-box;
+}
+
+body {
+   background-color:#e6e4e4;
+   color:#000000;
+   font-family: "Cabin", serif;
+   font-weight: 400;
+}
+
+header {
+    padding: 2rem;
+    background-color: #000000;
+    text-align: center;
+    h1 {
+        color:#7a63ff;
+    }
+    p {
+        color:#610a9f;
+    }
+}
+
+main {
+    padding:2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #4b0082;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #e60012;
+}
+/*width muda o tamanho da barra de digitação
+border-radiu serve para a as pontas das barra fique mais redondas*/
+input[type="text"], input[type="password"],input[type="date"],input[type="email"] {
+    width: 93%;
+    padding: 0.6rem;
+    border: 2px solid #7a63ff;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+
+}
+
+input::placeholder {
+    color: #e60012;
+}
+
+select {
+    cursor: pointer;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius:5px;
+    outline: none;
+    color: #e60012;
+}
+
+img {
+    width: 15rem;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1d3c6a;
+    padding: 1.5rem;
+    color: aliceblue;
+}
+
+td {
+    text-align: center;
+    color: #000000;
+    padding: 1rem;
+}
+
+tfoot td {
+    background-color: black;
+    color: white;
+}
+
+details {
+    background-color: #1d3c6a;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+summary {
+    color: white;
+    margin: o.5rem;
+    cursor: pointer;
+}
+
+ol {
+    margin: 1.5rem;
+}
+
+fieldset{
+    padding: 1rem;
+    border: 2px solid #7a63ff;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 0.5rem;
+    color: #1d3c6a;
+}
+
+textarea {
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    border:solid #4b0082 2px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 0.5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.paragrafo-footer {
+    color: white;
+}
+
